@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/app_color"
+    android:orientation="vertical"
+    android:padding="@dimen/_40sdp">
+
+    <TextView
+        style="@style/h2"
+        android:id="@+id/paymentstatusmessage"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment has successfully completed"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/verify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:textSize="@dimen/_12sdp"
+        android:background="@drawable/rect_round_corner"
+        android:backgroundTint="@color/white"
+        android:text="Got it"
+        android:textAllCaps="false" />
+
+</LinearLayout>

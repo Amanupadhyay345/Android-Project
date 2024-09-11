@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp"
+    android:id="@+id/itemliner"
+    android:layout_marginBottom="@dimen/_10sdp"
+    android:background="@drawable/rect_round_corner"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/_10sdp">
+
+    <ImageView
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:src="@drawable/find_job"
+        android:padding="@dimen/_3sdp"/>
+
+    <TextView
+        android:id="@+id/jobTitle"
+        style="@style/h3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:maxLines="2"
+        android:background="@null"
+        android:fontFamily="@font/roboto_bold"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/_10sdp"
+        android:text="Gaurd Requirement,\nGurgaon"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/applyBtn"
+        android:layout_width="@dimen/_73sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:textColor="@color/white"
+        android:background="@drawable/item_rect_round_corner"
+        android:textSize="@dimen/_10sdp"
+        android:text="Details" />
+
+
+
+</LinearLayout>

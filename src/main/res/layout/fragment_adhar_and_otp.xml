@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+tools:context=".landing.verify_otp_aadhar.AdharAndOTPFragment">
+
+
+
+
+
+<ImageView
+    android:id="@+id/imageView"
+    android:layout_width="130dp"
+    android:layout_marginTop="30dp"
+    android:layout_height="130dp"
+    android:src="@drawable/rojgarrakshak"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="@dimen/_60sdp"
+        android:src="@drawable/ic_back_ios"
+        android:padding="@dimen/_22sdp"
+        android:id="@+id/backbutton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="@dimen/_60sdp"/>
+
+<TextView
+    android:id="@+id/header"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Sign Up"
+    style="@style/T2"
+    app:layout_constraintStart_toStartOf="@+id/imageView"
+    app:layout_constraintEnd_toEndOf="@+id/imageView"
+    app:layout_constraintTop_toBottomOf="@+id/imageView"
+    />
+
+<LinearLayout
+    android:id="@+id/inputBox"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:layout_marginTop="@dimen/_38sdp"
+    app:layout_constraintTop_toBottomOf="@+id/header"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify the OTP"
+        style="@style/h5"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        />
+
+    <LinearLayout
+        android:id="@+id/otpLayoutLL"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:nextFocusLeft="@id/otp2"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:maxLength="6"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusLeft="@id/otp3"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusLeft="@id/otp4"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusLeft="@id/otp2"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusLeft="@id/otp2"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_weight="0.1">
+
+            <com.rspl.rojgaarrakshak.core.views.SquareEditText
+                android:id="@+id/otp6"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/editbox_focus_selector"
+                android:digits="0123456789"
+                android:gravity="center"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="1"
+                android:nextFocusLeft="@id/otp2"
+                android:text=""
+                android:textColorHighlight="#00233B84"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_22sdp"
+                android:textStyle="bold"
+                android:visibility="visible" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+        <TextView
+            android:id="@+id/timeLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:54"
+            style="@style/h5"
+            android:textStyle="bold"
+            />
+
+        <TextView
+            android:id="@+id/resendBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Resend"
+            style="@style/h5"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verify  your Aadhaar  "
+        style="@style/h5"
+        android:textStyle="bold"
+        android:textColor="@color/gray"
+        android:layout_marginTop="@dimen/_20sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@drawable/editbox_focus_selector"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:gravity="center"
+        >
+
+        <EditText
+            android:id="@+id/first4Digit"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:digits="0987654321"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:maxLength="4"
+            android:nextFocusLeft="@id/middle4Digit"
+            android:text=""
+            android:textColor="@color/text_color"
+            android:textColorHighlight="#00233B84"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/middle4Digit"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:digits="0987654321"
+            android:maxLength="4"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusLeft="@id/last4Digit"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:text=""
+            android:textColorHighlight="#00233B84"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            />
+
+        <EditText
+            android:id="@+id/last4Digit"
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="wrap_content"
+            android:digits="0987654321"
+            android:maxLength="4"
+            android:gravity="center"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            android:nextFocusLeft="@id/verifyOtp"
+            android:text=""
+            android:textColorHighlight="#00233B84"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_20sdp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+<androidx.appcompat.widget.AppCompatButton
+    android:id="@+id/verifyOtp"
+    style="@style/button_style"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Submit"
+    android:layout_marginTop="@dimen/_20sdp"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/inputBox" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

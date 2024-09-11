@@ -1,0 +1,586 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".dashboard.ticket_tab.TicketFragment">
+
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_260sdp"
+        >
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_back_ios"
+            app:tint="@color/black"
+            android:padding="@dimen/_12sdp"
+            />
+
+        <RelativeLayout
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_centerInParent="true"
+            android:id="@+id/imagerelative"
+            android:background="@drawable/circular_border"
+            android:elevation="5dp">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="@dimen/_80sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/_45sdp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:id="@+id/userimage"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:scaleType="centerCrop"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/account" />
+
+
+                <ProgressBar
+                    android:id="@+id/loader"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:indeterminate="true" />
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="4dp"
+            android:layout_marginTop="@dimen/_115sdp"
+            >
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp"
+                >
+
+                <TextView
+                    android:id="@+id/helloGuest"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="Hi Guest!"
+                    android:visibility="invisible"
+                    style="@style/T3"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/userDetailsContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingHorizontal="@dimen/_20sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:orientation="vertical"
+                    android:visibility="invisible"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Name :"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                style="@style/h4"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/username"
+                                android:maxLines="2"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:text="Nishesh"
+
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Employee ID :"
+                                android:id="@+id/datejoingtext"
+                                style="@style/h4"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/dateofjoing"
+                                android:text="17-06-2020"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Designation :"
+                                style="@style/h4"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:id="@+id/currentjob"
+                                android:layout_height="wrap_content"
+                                android:text="UnKnown"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/_11sdp"
+                                android:layout_gravity="left"
+                                android:gravity="left"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="invisible"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Current Job :"
+                                style="@style/h4"
+                                android:textStyle="bold"/>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.4"
+                            android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+
+                                android:layout_height="wrap_content"
+                                android:text="Security Services"
+                                style="@style/h4"
+                                />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </FrameLayout>
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/checkInContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            >
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/checkIn"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                style="@style/button_style"
+                android:layout_height="wrap_content"
+                android:text="Check In"/>
+
+            <Space
+                android:layout_width="@dimen/_10sdp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/checkOut"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                style="@style/button_style"
+                android:layout_height="wrap_content"
+                android:text="Check Out"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/findJobContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/find_job"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Find Jobs"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/aboutUs"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/about_us"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="About us"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/tosContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/tos"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Terms of Services"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/privacyContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/privacy"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Privacy Policy"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/workHistoryContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/privacy"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Work History"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/salarySlipContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/salary_slip_icon"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Salary Slip"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/raiseConcernContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:background="@drawable/rect_round_corner"
+            android:visibility="gone"
+            >
+            <ImageView
+                android:paddingVertical="@dimen/_5sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/salary_slip_icon"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                style="@style/h3"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:gravity="center_vertical"
+                android:paddingStart="@dimen/_10sdp"
+                android:text="Raise Concern"
+                />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:src="@drawable/ic_back_ios"
+                android:rotation="180"
+                android:padding="@dimen/_10sdp"
+                />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

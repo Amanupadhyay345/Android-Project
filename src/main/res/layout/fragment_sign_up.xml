@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".landing.signup.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/signupbackbutton"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_back_ios"
+            android:padding="@dimen/_22sdp"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/rojgarrakshak"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/header"
+            style="@style/T2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            app:layout_constraintEnd_toEndOf="@+id/imageView"
+            app:layout_constraintStart_toStartOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <LinearLayout
+            android:id="@+id/inputBox"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/header">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/name"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Name / नाम *"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/dobBtn"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/dobText"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:hint="Date of Birth / जन्मतिथि *"
+                    android:paddingStart="@dimen/_10sdp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/email"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Email / ईमेल"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/locationText"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Location / जगह *"
+                    android:imeOptions="actionNext"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/skillContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:gravity="center_vertical|end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/skills"
+                        style="@style/h4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="Skill / कौशल *"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:rotation="-90"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/ic_back_ios"
+                        app:tint="@color/gray" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/skillList"
+                    android:layout_width="match_parent"
+                    android:layout_height="350dp"
+                    android:scrollbars="vertical"
+                    android:nestedScrollingEnabled="true"
+                    tools:listitem="@layout/item_skills"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    tools:visibility="gone"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/skillContainer2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:gravity="center_vertical|end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/skills2"
+                        style="@style/h4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="Marital Status/ वैवाहिक स्थिति *"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:rotation="-90"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/ic_back_ios"
+                        app:tint="@color/gray" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/skillList2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_skills"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    tools:visibility="gone"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/skillContainer1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:gravity="center_vertical|end"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/skills1"
+                        style="@style/h4"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:hint="Gender / लिंग *"
+                        android:textColor="@android:color/black"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true" />
+
+                    <ImageView
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        android:rotation="-90"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:paddingEnd="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:src="@drawable/ic_back_ios"
+                        app:tint="@color/gray" />
+
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/skillList1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false"
+                    tools:listitem="@layout/item_skills"
+                    android:layout_marginVertical="@dimen/_10sdp"
+                    tools:visibility="gone"
+                    android:visibility="gone"
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/MotherTongue"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="Mother Tongue / मातृ भाषा *"
+                    android:imeOptions="actionNext"
+                    android:inputType="textPersonName"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mobileContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/phoneNum"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="10"
+                    android:digits="9876543210"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Phone Number / फ़ोन नंबर *"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/AadharContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/aadharEdittext"
+                    style="@style/h4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@null"
+                    android:maxLength="12"
+                    android:digits="9876543210"
+                    android:ellipsize="end"
+                    android:gravity="center_vertical"
+                    android:hint="Aadhar Number / आधार नंबर *"
+                    android:imeOptions="actionNext"
+                    android:inputType="phone"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/fileUpload"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/rect_round_corner"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:gravity="center_vertical|end"
+                    android:clickable="false"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/uploadedFileText"
+                        style="@style/h4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:ellipsize="end"
+                        android:clickable="false"
+                        android:gravity="center_vertical"
+                        android:hint="Upload File / फ़ाइल *"
+                        android:paddingStart="@dimen/_10sdp"
+                        android:singleLine="true" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/signInBtn"
+            style="@style/button_style"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_50sdp"
+            android:text="Submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/inputBox" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

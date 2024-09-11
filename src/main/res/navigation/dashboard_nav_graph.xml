@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard_nav_graph"
+    app:startDestination="@id/ticketFragment">
+
+    <fragment
+        android:id="@+id/ticketFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.ticket_tab.TicketFragment"
+        android:label="fragment_ticket"
+        tools:layout="@layout/fragment_ticket" />
+    <fragment
+        android:id="@+id/searchJobFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.search_job.SearchJobFragment"
+        android:label="fragment_search_job"
+        tools:layout="@layout/fragment_search_job" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.settings.SettingsFragment"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/workHistoryFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.work_history.WorkHistoryFragment"
+        android:label="fragment_work_history"
+        tools:layout="@layout/fragment_work_history" />
+    <fragment
+        android:id="@+id/salarySlipsFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.slips.SalarySlipsFragment"
+        android:label="fragment_salary_slips"
+        tools:layout="@layout/fragment_salary_slips"/>
+    <fragment
+        android:id="@+id/concernHistoryFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.concerns.ConcernHistoryFragment"
+        android:label="fragment_concern_history"
+        tools:layout="@layout/fragment_concern_history" />
+    <fragment
+        android:id="@+id/raiseConcernFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.concerns.RaiseConcernFragment"
+        android:label="fragment_raise_concern"
+        tools:layout="@layout/fragment_raise_concern" />
+    <fragment
+        android:id="@+id/appliedJobsFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.applied.AppliedJobsFragment"
+        android:label="fragment_applied_jobs"
+        tools:layout="@layout/fragment_applied_jobs" />
+    <fragment
+        android:id="@+id/filterFragment"
+        android:name="com.rspl.rojgaarrakshak.dashboard.filter.FilterFragment"
+        android:label="fragment_filter"
+        tools:layout="@layout/fragment_filter" />
+    <fragment
+        android:id="@+id/skillFregment2"
+        android:name="com.rspl.rojgaarrakshak.landing.Skill.SkillFregment"
+        android:label="fragment_skill_fregment"
+        tools:layout="@layout/fragment_skill_fregment" />
+    <fragment
+        android:id="@+id/userLocation"
+        android:name="com.rspl.rojgaarrakshak.landing.UserLocation.UserLocation"
+        android:label="fragment_user_location"
+        tools:layout="@layout/fragment_user_location" />
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <declare-styleable name="TextViewWithDrawables">
+        <attr name="viewText" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="leftDrawableTint" format="color" />
+        <attr name="rightDrawableTint" format="color" />
+        <attr name="leftDrawable" format="color|reference" />
+        <attr name="rightDrawable" format="color|reference" />
+    </declare-styleable>
+</resources>

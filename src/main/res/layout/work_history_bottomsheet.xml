@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_250sdp"
+    android:background="@color/app_color"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_40sdp">
+
+    <TextView
+        style="@style/T3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nishesh Subodh"
+        android:id="@+id/empname"
+        android:textAlignment="center"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_25sdp"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company Name"
+                style="@style/h4"
+                android:textColor="@color/white"
+                android:textStyle="bold"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="3px"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="xyz"
+                android:id="@+id/companyname"
+                style="@style/h4"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Designation"
+                style="@style/h4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="3px"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Security Services"
+                style="@style/h4"
+                android:id="@+id/securityservice"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Location"
+                style="@style/h4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="3px"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lucknow"
+                android:id="@+id/location"
+                style="@style/h4"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                style="@style/h4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="3px"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec"
+                android:id="@+id/dateofjoing"
+                style="@style/h4"
+                android:layout_weight="0.5"
+                android:textColor="@color/white"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dec"
+                style="@style/h4"
+                android:id="@+id/enddate"
+                android:layout_weight="0.5"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Salary"
+                style="@style/h4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="3px"
+            android:background="@color/white"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="@dimen/_10sdp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="25000"
+                android:id="@+id/salary"
+                style="@style/h4"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

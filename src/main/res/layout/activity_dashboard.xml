@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/app_bg"
+    tools:context=".dashboard.DashboardActivity">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        android:layout_marginBottom="@dimen/_50sdp"
+        app:navGraph="@navigation/dashboard_nav_graph"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="#ffffff"
+        android:elevation="20dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="bottom"
+            android:background="@color/white"
+            app:itemRippleColor="@android:color/transparent"
+            app:itemIconTint="@color/black"
+            app:menu="@menu/bottom_menu"
+            app:labelVisibilityMode="unlabeled"
+            android:animateLayoutChanges="true"
+            app:itemActiveIndicatorStyle="@android:color/transparent"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

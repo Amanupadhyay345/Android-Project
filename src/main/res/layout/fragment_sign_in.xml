@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".landing.sign_in.SignInFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/rojgarrakshak"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sign In"
+        style="@style/T2"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        />
+
+    <LinearLayout
+        android:id="@+id/inputBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        app:layout_constraintTop_toBottomOf="@+id/header"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Phone Number / Your Employee ID"
+            style="@style/h5"
+            android:textStyle="bold"
+            android:textColor="@color/gray"
+            />
+
+        <LinearLayout
+            android:id="@+id/mobileContainer"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/rect_round_corner"
+            >
+
+
+            <EditText
+                android:id="@+id/mobileNum"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@null"
+                style="@style/h2"
+                android:fontFamily="@font/roboto_bold"
+                android:textStyle="bold"
+                android:hint="9876543210 / EMPID"
+                android:gravity="center_vertical"
+
+                android:paddingStart="@dimen/_10sdp"
+
+                android:maxLength="10"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/signInBtn"
+        style="@style/button_style"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Send OTP"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputBox" />
+
+    <TextView
+        android:id="@+id/notForNow"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="Not for now"
+        style="@style/h5"
+        android:textStyle="italic"
+        android:visibility="gone"
+        android:textColor="@color/gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/signInBtn"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notForNow"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Don't have an account?"
+            style="@style/h5"
+            android:textColor="@color/gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signInBtn"
+            />
+
+        <TextView
+            android:id="@+id/signUpBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_40sdp"
+            android:text="Sign Up"
+            style="@style/h3"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:paddingHorizontal="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signInBtn"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

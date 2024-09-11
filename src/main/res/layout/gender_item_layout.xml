@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_30sdp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="2"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/skillName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+           android:gravity="start|center"
+            android:paddingLeft="15dp"
+            style="@style/normal_text"
+            android:textSize="14dp"
+            android:layout_weight="1.5"
+            android:text="service type"
+            android:checked="false"
+            android:checkMark="@drawable/checkbox_checked"
+            />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:id="@+id/checkcircle"
+            android:visibility="invisible"
+            android:layout_weight="0.5"
+            android:src="@drawable/baseline_check_circle_24"
+            android:layout_gravity="center"
+            android:layout_height="25dp"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".dashboard.settings.SettingsFragment">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/app_color"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:visibility="visible"
+        >
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_back_ios"
+            app:tint="@color/white"
+            android:padding="@dimen/_12sdp"
+            android:visibility="invisible"
+            />
+
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleX="2"
+            android:scaleY="2"
+            android:src="@drawable/logo" />
+
+
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/header"
+        style="@style/T3"
+        android:textSize="@dimen/_16sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_marginVertical="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintStart_toStartOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+
+    <LinearLayout
+        android:id="@+id/findJobContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/setting_refund" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Request for Refund"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/refundPolicy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/setting_refund" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Refund Policy"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Salary_Slip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/setting_refund" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Salary Slip"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/privacypolicies"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/about_us" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Privacy Policy"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Apppermission"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/tos" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="App Permissions"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/termsofservice"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/privacy" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Terms of Service"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/accountDeactivateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/privacy" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Request for Account Deactivation"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ContactUs"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/about_us" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Contact Us"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/Logout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_height"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/rect_round_corner"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="match_parent"
+            android:paddingVertical="@dimen/_7sdp"
+            android:src="@drawable/usersessionlogout" />
+
+        <TextView
+            style="@style/h3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            android:fontFamily="@font/roboto_bold"
+            android:gravity="center_vertical"
+            android:paddingStart="@dimen/_10sdp"
+            android:text="Log Out"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:padding="@dimen/_10sdp"
+            android:rotation="180"
+            android:src="@drawable/ic_back_ios" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

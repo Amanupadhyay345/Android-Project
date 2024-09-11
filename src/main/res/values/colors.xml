@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="app_color">#1A1938</color>
+    <color name="text_color">@color/app_color</color>
+    <color name="button_color">#1A1938</color>
+    <color name="black">#FF000000</color>
+    <color name="gray">#808191</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="light_blue_400">#FF29B6F6</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="gray_400">#FFBDBDBD</color>
+    <color name="gray_600">#FF757575</color>
+    <color name="button_background">#108423</color>
+    <color name="ResendDullColor">#575252</color>
+
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FC4B41</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+
+    <color name="selected_color">#000000</color> <!-- Change this color to your desired selected color -->
+    <color name="unselected_color">#ffffff</color> <!-- Change this color to your desired unselected color -->
+</resources>

@@ -1,0 +1,22 @@
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_back_ios"
+            android:padding="@dimen/_22sdp"
+            android:visibility="visible"
+
+            />
+
+    <WebView
+        android:layout_width="match_parent"
+        android:id="@+id/WebView"
+        android:layout_height="match_parent"/>
+
+
+</LinearLayout>

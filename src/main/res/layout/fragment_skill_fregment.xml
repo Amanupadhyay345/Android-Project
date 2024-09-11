@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".landing.Skill.SkillFregment"
+    >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:id="@+id/Header"
+            android:background="@color/app_color"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_back_ios"
+                app:tint="@color/white"
+                android:padding="@dimen/_12sdp"
+                android:visibility="visible"
+                />
+
+
+            <ImageView
+                android:layout_width="180dp"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:scaleX="2"
+                android:scaleY="2"
+                android:src="@drawable/logo" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:textSize="25dp"
+            android:id="@+id/LayoutHeading"
+            android:textColor="@color/black"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/Header"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=" Preferred Skill"
+            android:layout_marginBottom="20dp"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/skillrecyclervie"
+            android:visibility="visible"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            tools:itemCount="10"
+            />
+
+        <Button
+            android:layout_width="160dp"
+            android:layout_height="55dp"
+            app:layout_constraintTop_toBottomOf="@id/fileUpload"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:id="@+id/NextPage"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Next"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginHorizontal="@dimen/_20sdp"
+            style="@style/button_style"
+            android:textSize="18dp"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+</LinearLayout>
